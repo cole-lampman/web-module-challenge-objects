@@ -93,8 +93,8 @@ and should return a string in the format `name} gave the restaurant a {rating}, 
 
 For example, if getLastReview is invoked passing the reviews array it will return `Reyna gave the restaurant a 3.5 star review and their feedback was: "this place is chill with really cool people, great for getting work done on weekdays"`.
 */
-function getLastReview(array, index) {
-       return `${array[index].name} gave the restaurant a ${array[index].rating}, and their feedback was: ${array[index].feedback}`
+function getLastReview(array) {
+       return `${array[array.index -1].name} gave the restaurant a ${array[array.index -1].rating}, and their feedback was: ${array[array.index -1].feedback}`
 
    
   } 
